@@ -6,7 +6,12 @@
 		}
 	],
 	"require" : {
-		"silverstripe/framework" : "3.1.13"
+		"ext-mbstring": "*",
+		"silverstripe/framework" : "3.1.13",
+		"gdmedia/ss-auto-git-ignore" : "dev-master"
+	},
+	"scripts": {
+		"post-update-cmd": "GDM\\SSAutoGitIgnore\\UpdateScript::Go"
 	},
 	"minimum-stability" : "dev"
 }
